@@ -4,9 +4,10 @@ import { BrowserRouter as Router } from 'react-router-dom';
 import { RutasPrincipales } from './routes/RutasPrincipales';
 import { AlertasContext } from './Elements/Context/ContextModoDark';
 import { useContext, useState } from 'react';
-import { LoginBase } from './Login/LoginBase';
+// import { LoginBase } from './Login/LoginBase';
 import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+import { MenuPrincipalScream } from './Login/MePrincipal/MenuPrincipalCreams';
 
 export const App = () => {
 
@@ -25,7 +26,8 @@ export const App = () => {
   return (
     <div className="App" style={appStyle}>
       {entrar_aplicacion === false && (
-        <LoginBase set_entrar_aplicacion={set_entrar_aplicacion} />
+        // <LoginBase set_entrar_aplicacion={set_entrar_aplicacion} />
+        <MenuPrincipalScream set_entrar_aplicacion={set_entrar_aplicacion}/>
       )}
 
 

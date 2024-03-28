@@ -17,7 +17,7 @@ import { useState } from 'react';
 import { ImagenPortada } from './ImagenPortada';
 import { CustomizedSwitches } from './ModoOscuro';
 
-const pages = ['Inicio', 'Prestamos', 'Registro', "Contacto"];
+const pages = ['Inicio', 'Encuestas', 'Registro', "Contacto"];
 const settings = ['Profile', 'Account', 'Dashboard', 'Logout', "perfil", "s"];
 
 export const ResponsiveAppBar = ({ set_entrar_aplicacion }: any) => {
@@ -67,7 +67,7 @@ export const ResponsiveAppBar = ({ set_entrar_aplicacion }: any) => {
                                 textDecoration: 'none',
                             }}
                         >
-                            Compensar B
+                            Encuestas Julio 
                         </Typography>
 
                         <Box sx={{ flexGrow: 1, display: { xs: 'flex', md: 'none' } }}>

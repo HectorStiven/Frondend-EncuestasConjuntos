@@ -8,7 +8,7 @@ export const RutasPrincipales = () => {
   return (
     <Routes >
       <Route path="/Inicio" element={<Inicio />} />
-      <Route path="/Prestamos" element={<Productos />} />
+      <Route path="/Encuestas" element={<Productos />} />
       <Route path="/Registro" element={<PedidoPrincipal />} />
       <Route path="/Contacto" element={<Contacto />} />
     </Routes>
