@@ -1,7 +1,7 @@
 import { Routes, Route } from 'react-router-dom';
 import { Inicio } from '../Components/Inicio/Inicio';
 import { Productos } from '../Components/Productos/Productos';
-import { Contacto } from '../Components/Contacto/Contacto';
+import { Busqueda } from '../Components/Contacto/Contacto';
 import { PedidoPrincipal } from '../Components/Pedidos/Pedido';
 
 export const RutasPrincipales = () => {
@@ -10,7 +10,7 @@ export const RutasPrincipales = () => {
       <Route path="/Inicio" element={<Inicio />} />
       <Route path="/Encuestas" element={<Productos />} />
       <Route path="/Registro" element={<PedidoPrincipal />} />
-      <Route path="/Contacto" element={<Contacto />} />
+      <Route path="/Busqueda" element={<Busqueda />} />
     </Routes>
   );
 }

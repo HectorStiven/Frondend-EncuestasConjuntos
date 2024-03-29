@@ -10,7 +10,7 @@
     "@mui/icons-material": "^5.14.16",
     "@mui/material": "^5.14.17",
     "@mui/styled-engine-sc": "^6.0.0-alpha.5",
-    "@mui/x-data-grid": "^6.19.6",
+    "@mui/x-data-grid": "^7.1.0",
     "@reduxjs/toolkit": "^1.9.7",
     "@testing-library/jest-dom": "^5.17.0",
     "@testing-library/react": "^13.4.0",
@@ -58,7 +58,8 @@
     ]
   },
   "devDependencies": {
-    "@babel/plugin-proposal-private-property-in-object": "^7.21.11"
+    "@babel/plugin-proposal-private-property-in-object": "^7.21.11",
+    "@types/uuid": "^9.0.8"
   },
   "proxy": "https://backend-bibliotecacompensar-production.up.railway.app"
 }
