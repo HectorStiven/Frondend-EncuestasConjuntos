@@ -6,6 +6,7 @@ import GroupIcon from '@mui/icons-material/Group';
 import PersonPinIcon from '@mui/icons-material/PersonPin';
 import { BusquedaAvanzadaPersonas } from './BusquedaPerosnas/BusquedaPerosnas';
 import { BusquedaCasas } from './BusquedaCasas/BusquedaCasas';
+import { BusquedaConjuntos } from './BusquedaConjuntos/BusquedaConjuntos';
 
 // Función para renderizar un panel de pestaña
 const TabPanel = (props: any) => {
@@ -51,7 +52,7 @@ export const OpcionesBusquedaAvanzada = () => {
         <BusquedaCasas />
       </TabPanel>
       <TabPanel value={value} index={1}>
-        <h1>no disponible</h1>
+        <BusquedaConjuntos/>
       </TabPanel>
       <TabPanel value={value} index={2}>
         <BusquedaAvanzadaPersonas />
