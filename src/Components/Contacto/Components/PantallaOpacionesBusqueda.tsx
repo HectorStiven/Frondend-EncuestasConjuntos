@@ -5,9 +5,10 @@ import HomeIcon from '@mui/icons-material/Home';
 import GroupIcon from '@mui/icons-material/Group';
 import PersonPinIcon from '@mui/icons-material/PersonPin';
 import { BusquedaAvanzadaPersonas } from './BusquedaPerosnas/BusquedaPerosnas';
+import { BusquedaCasas } from './BusquedaCasas/BusquedaCasas';
 
 // Función para renderizar un panel de pestaña
-const TabPanel = (props:any) => {
+const TabPanel = (props: any) => {
   const { children, value, index, ...other } = props;
 
   return (
@@ -41,19 +42,19 @@ export const OpcionesBusquedaAvanzada = () => {
     <div style={{ width: '100%' }}>
       {/* Pestañas con íconos y etiquetas */}
       <Tabs value={value} onChange={handleChange} aria-label="icon label tabs example" centered>
-      <Tab icon={<HomeIcon  />} label="CASAS" />
-        <Tab icon={<GroupIcon  />} label="conjuntos" />
+        <Tab icon={<HomeIcon />} label="CASAS" />
+        <Tab icon={<GroupIcon />} label="conjuntos" />
         <Tab icon={<PersonPinIcon />} label="PERSONA" />
       </Tabs>
       {/* Paneles de contenido para cada pestaña */}
       <TabPanel value={value} index={0}>
-      <h1>no disponible</h1>
+        <BusquedaCasas />
       </TabPanel>
       <TabPanel value={value} index={1}>
-      <h1>no disponible</h1>
+        <h1>no disponible</h1>
       </TabPanel>
       <TabPanel value={value} index={2}>
-      <BusquedaAvanzadaPersonas/>
+        <BusquedaAvanzadaPersonas />
       </TabPanel>
     </div>
   );
